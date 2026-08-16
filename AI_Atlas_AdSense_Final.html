@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Atlas — AI Tools, Models & Prompts</title>
+<meta name="description" content="AI Atlas helps you discover, compare and learn about AI tools, models, prompts and use cases.">
+<meta name="author" content="Umar Hassan">
+<!-- Google AdSense: replace YOUR_PUBLISHER_ID with your real ca-pub-XXXXXXXXXXXXXXX ID -->
+<!-- <meta name="google-adsense-account" content="ca-pub-YOUR_PUBLISHER_ID"> -->
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://umarhassan2.github.io/ai-atlas1/">
+<style>
+:root{--bg:#070b14;--card:#101827;--line:#24324a;--text:#eef4ff;--muted:#9aa9c0;--p:#795cff;--c:#18c8ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,sans-serif;background:radial-gradient(circle at 10% 0,#1b2350,transparent 35%),var(--bg);color:var(--text);line-height:1.65}a{color:inherit;text-decoration:none}nav{position:sticky;top:0;z-index:10;padding:15px 6%;background:#070b14e8;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}.logo{font-size:22px;font-weight:900}.logo span{color:var(--c)}.nav{display:flex;gap:18px;color:var(--muted)}.hero{padding:90px 6%;text-align:center;max-width:1000px;margin:auto}.pill{display:inline-block;border:1px solid #39476b;border-radius:30px;padding:6px 12px;color:#bfcaff}.hero h1{font-size:clamp(48px,8vw,92px);line-height:.95;margin:20px 0;letter-spacing:-5px}.grad{background:linear-gradient(90deg,#fff,#8d7cff,#20d5ff);color:transparent;background-clip:text}.hero p,.sub{color:var(--muted);max-width:760px;margin:20px auto}.btn,.try{display:inline-block;padding:11px 16px;border-radius:10px;border:1px solid var(--line);background:#111b2c;font-weight:bold}.primary,.try{background:linear-gradient(135deg,var(--p),#4f9cff);border:0}.actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:25px}.ad{margin:20px auto;max-width:950px;min-height:90px;border:1px dashed #3b4a63;display:flex;align-items:center;justify-content:center;color:#74829a;font-size:12px}.container{width:88%;max-width:1180px;margin:auto}section{padding:65px 0}.title{text-align:center;font-size:36px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(180deg,#111b2c,#0c1421);border:1px solid var(--line);border-radius:18px;padding:21px}.card p{color:var(--muted)}.icon{font-size:30px}.toolbar{display:flex;gap:10px;margin-bottom:20px}.search,.filter{padding:13px;background:#0d1523;color:white;border:1px solid var(--line);border-radius:10px}.search{flex:1}.tags{color:#aab8ce;font-size:12px}.compare{overflow:auto;border:1px solid var(--line);border-radius:16px}.compare table{border-collapse:collapse;width:100%;min-width:700px}.compare th,.compare td{padding:13px;border-bottom:1px solid var(--line);text-align:left}.compare th{background:#111b2c}.check{color:#54e39b;font-weight:bold}.notice{padding:24px;border:1px solid #334563;border-radius:18px;background:#101a2c}.legal{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}footer{text-align:center;border-top:1px solid var(--line);padding:35px;color:var(--muted)}@media(max-width:800px){.grid,.legal{grid-template-columns:1fr 1fr}.nav{display:none}}@media(max-width:550px){.grid,.legal{grid-template-columns:1fr}.hero h1{letter-spacing:-3px}.toolbar{flex-direction:column}}
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6348887252639681" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav><a class="logo" href="#">AI<span>ATLAS</span> ✦</a><div class="nav"><a href="#tools">Tools</a><a href="#compare">Compare</a><a href="#prompts">Prompts</a><a href="#about">About</a><a href="#contact">Contact</a></div></nav>
+
+<header class="hero">
+<div class="pill">AI DIRECTORY • TOOLS • MODELS • PROMPTS</div>
+<h1>Find the right <span class="grad">AI.</span></h1>
+<p>Discover and compare AI tools for writing, coding, research, images, video, productivity and more.</p>
+<div class="actions"><a class="btn primary" href="#tools">Explore AI Tools</a><a class="btn" href="#categories">Categories</a></div>
+</header>
+
+<div class="ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6348887252639681"
+     data-ad-slot="8495285268"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+<section id="tools"><div class="container">
+<h2 class="title">AI Tools & Models</h2><p class="sub">Search or filter the directory.</p>
+<div class="toolbar"><input id="search" class="search" placeholder="Search AI tools..." oninput="render()"><select id="filter" class="filter" onchange="render()"><option value="all">All</option><option value="chat">Chat</option><option value="code">Coding</option><option value="image">Images</option><option value="research">Research</option><option value="video">Video</option><option value="productivity">Productivity</option><option value="open">Open Models</option></select></div>
+<div id="toolsGrid" class="grid"></div>
+</div></section>
+
+<section id="categories"><div class="container"><h2 class="title">AI Categories</h2><p class="sub">Explore AI by use case.</p><div class="grid">
+<div class="card"><div class="icon">💬</div><h3>AI Assistants</h3><p>Conversation, writing, reasoning and everyday tasks.</p></div>
+<div class="card"><div class="icon">💻</div><h3>AI Coding</h3><p>Programming, debugging, IDE assistants and development.</p></div>
+<div class="card"><div class="icon">🎨</div><h3>AI Image</h3><p>Image generation, editing, design and thumbnails.</p></div>
+<div class="card"><div class="icon">🎬</div><h3>AI Video</h3><p>Video generation, editing, animation and avatars.</p></div>
+<div class="card"><div class="icon">🔎</div><h3>AI Research</h3><p>Search, sources, summaries and analysis.</p></div>
+<div class="card"><div class="icon">📊</div><h3>AI Productivity</h3><p>Documents, meetings, automation and workflows.</p></div>
+</div></div></section>
+
+<section id="compare"><div class="container"><h2 class="title">AI Comparison</h2><p class="sub">Different tools are strong at different jobs.</p><div class="compare"><table><tr><th>AI</th><th>Best for</th><th>Reasoning</th><th>Coding</th><th>Vision</th><th>Research</th></tr>
+<tr><td>ChatGPT</td><td>General AI</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td></tr>
+<tr><td>Claude</td><td>Writing & analysis</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td></tr>
+<tr><td>Gemini</td><td>Multimodal</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td></tr>
+<tr><td>DeepSeek</td><td>Reasoning & coding</td><td class="check">✓</td><td class="check">✓</td><td>—</td><td>✓</td></tr>
+<tr><td>Perplexity</td><td>AI search</td><td>✓</td><td>✓</td><td>✓</td><td class="check">✓</td></tr>
+<tr><td>Grok</td><td>Chat & current info</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td>✓</td></tr>
+</table></div></div></section>
+
+<section id="prompts"><div class="container"><h2 class="title">Free AI Prompt Library</h2><p class="sub">Useful starting prompts.</p><div class="grid">
+<div class="card"><div class="icon">✍️</div><h3>Content Writer</h3><p>Act as an expert content writer. Create a clear article about [TOPIC] for [AUDIENCE], with headings, examples and a useful conclusion.</p></div>
+<div class="card"><div class="icon">💻</div><h3>Website Builder</h3><p>Act as a senior web developer. Build a responsive HTML/CSS/JS website for [PROJECT] with a modern design.</p></div>
+<div class="card"><div class="icon">🎓</div><h3>Study Tutor</h3><p>Act as my tutor. Teach me [TOPIC] from beginner to advanced with simple explanations, examples and quizzes.</p></div>
+</div></div></section>
+
+<div class="ad"><ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6348887252639681"
+     data-ad-slot="8495285268"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+<section id="about"><div class="container"><h2 class="title">About AI Atlas</h2><p class="sub">An independent guide to discovering and understanding AI.</p><div class="card">
+<h3>Who we are</h3><p>AI Atlas is an independent website owned by <b>Umar Hassan</b>. It helps beginners, students, creators, developers, freelancers and businesses discover useful AI tools and understand what they are designed to do.</p>
+<h3>What we publish</h3><p>We cover AI assistants, coding tools, image and video generators, research tools, productivity software, AI models, prompts, comparisons and educational guides.</p>
+<h3>Our approach</h3><p>We aim to make information clear and useful. AI products, pricing and features change frequently, so important information should be checked on the provider's official website.</p>
+</div></div></section>
+
+<section id="contact"><div class="container"><h2 class="title">Contact</h2><p class="sub">Questions, corrections, suggestions or business inquiries.</p><div class="card"><h3>Get in touch</h3><p>Email us for corrections, tool suggestions or legitimate business inquiries.</p><p>📧 <b>Email:</b> <a style="color:#65d7ff" href="mailto:choudharyumar225@gmail.com">choudharyumar225@gmail.com</a></p><p><b>Owner:</b> Umar Hassan<br><b>Country:</b> Pakistan</p></div></div></section>
+
+<section id="privacy"><div class="container"><h2 class="title">Privacy Policy</h2><p class="sub">Last updated: August 2026</p><div class="card">
+<h3>1. Information</h3><p>AI Atlas may receive technical information such as browser type, device information, IP address, pages visited and general usage data. If you contact us, we receive information you voluntarily provide.</p>
+<h3>2. Cookies</h3><p>Cookies or similar technologies may be used for functionality, analytics and advertising. Third-party advertising providers may use their own cookies according to their policies.</p>
+<h3>3. Google AdSense</h3><p>If AdSense is enabled, Google and its partners may use cookies or similar technologies to display and measure advertisements. Review Google's current privacy and advertising controls for details.</p>
+<h3>4. Analytics</h3><p>Analytics may be used to understand traffic and improve the website.</p>
+<h3>5. Third-party links</h3><p>AI Atlas links to external AI services. Their own privacy policies and terms apply when you leave our site.</p>
+<h3>6. Security and changes</h3><p>Reasonable measures are used to protect information, but no internet system is guaranteed completely secure. This policy may be updated when the website or legal requirements change.</p>
+<h3>7. Contact</h3><p>Privacy questions: <a style="color:#65d7ff" href="mailto:choudharyumar225@gmail.com">choudharyumar225@gmail.com</a>.</p>
+</div></div></section>
+
+<section id="terms"><div class="container"><h2 class="title">Terms & Conditions</h2><div class="card"><h3>Use</h3><p>AI Atlas is provided for informational and educational purposes. Use the site lawfully and responsibly.</p><h3>Accuracy</h3><p>AI models, pricing and features can change. We cannot guarantee that every detail is current or error-free.</p><h3>Third-party services</h3><p>We are not responsible for external services linked from this website.</p><h3>High-stakes decisions</h3><p>AI information should not replace qualified professional advice for medical, legal, financial or other high-stakes matters.</p></div></div></section>
+
+<section id="affiliate"><div class="container"><h2 class="title">Affiliate Disclosure</h2><div class="card"><p><b>Current status: AI Atlas does not currently use affiliate links.</b></p><p>If affiliate or referral relationships are introduced in the future, they will be clearly disclosed near relevant links and this page will be updated.</p></div></div></section>
+
+<section><div class="container"><div class="notice"><h2>⚠️ Important AI Disclaimer</h2><p>AI can produce inaccurate or outdated information. Verify important information with authoritative sources. Do not rely on AI alone for high-stakes decisions.</p></div></div></section>
+
+<footer><b>AI ATLAS</b> — Discover. Compare. Create.<p><a href="#about">About</a> · <a href="#contact">Contact</a> · <a href="#privacy">Privacy</a> · <a href="#terms">Terms</a> · <a href="#affiliate">Affiliate Disclosure</a></p><small>© 2026 AI Atlas · Owned by Umar Hassan · Pakistan</small></footer>
+
+<script>
+const data=[
+["ChatGPT","OpenAI","💬",["chat","code","image","research"],"General AI, writing, coding, learning, analysis and creative work.","https://chatgpt.com/"],
+["Claude","Anthropic","✦",["chat","code","research"],"Writing, analysis, coding, reasoning and complex information.","https://claude.ai/"],
+["Gemini","Google","♊",["chat","code","image","research","productivity"],"Google AI assistant for writing, coding, research and multimodal work.","https://gemini.google.com/"],
+["DeepSeek","DeepSeek","🐋",["chat","code","research","open"],"Reasoning, mathematics and programming workloads.","https://www.deepseek.com/"],
+["Perplexity","Perplexity","⌕",["research","chat"],"AI search, source discovery and research.","https://www.perplexity.ai/"],
+["Grok","xAI","𝕏",["chat","code","research"],"Conversation, reasoning, coding and creative tasks.","https://grok.com/"],
+["Microsoft Copilot","Microsoft","▣",["chat","code","productivity"],"AI assistance for Microsoft productivity and development workflows.","https://copilot.microsoft.com/"],
+["GitHub Copilot","GitHub","💻",["code"],"AI coding assistant for software development.","https://github.com/features/copilot"],
+["Canva AI","Canva","🎨",["image","productivity"],"AI-powered design, images, presentations and visual content.","https://www.canva.com/"],
+["Meta Llama","Meta","🦙",["chat","code","open"],"Model family used by developers for AI applications and research.","https://www.llama.com/"],
+["Mistral AI","Mistral AI","✧",["chat","code","open"],"Language, coding, reasoning and enterprise AI models.","https://mistral.ai/"],
+["Qwen","Alibaba","Q",["chat","code","image","open"],"Language, coding and multimodal AI models.","https://qwen.ai/"],
+["Runway","Runway","🎬",["video","image"],"AI video and visual content creation.","https://runwayml.com/"],
+["Pika","Pika","🎞️",["video"],"AI video creation and transformation.","https://pika.art/"],
+["ElevenLabs","ElevenLabs","🔊",["video","productivity"],"AI voice, speech and audio creation.","https://elevenlabs.io/"],
+["Notion AI","Notion","📝",["productivity","chat"],"AI features for notes, documents and productivity.","https://www.notion.com/product/ai"],
+["Cursor","Anysphere","⌨️",["code"],"AI-first code editor for developers.","https://www.cursor.com/"],
+["Hugging Face","Hugging Face","🤗",["open","research","code"],"Models, datasets and machine-learning community resources.","https://huggingface.co/"],
+["Google AI Studio","Google","🧪",["code","research"],"Environment for experimenting with generative AI models.","https://aistudio.google.com/"],
+["Adobe Firefly","Adobe","🔥",["image","video"],"Generative AI for creative workflows and design.","https://firefly.adobe.com/"]
+];
+function render(){
+ let q=document.getElementById("search").value.toLowerCase(),f=document.getElementById("filter").value;
+ let a=data.filter(x=>(f=="all"||x[3].includes(f))&&(x[0]+" "+x[1]+" "+x[4]).toLowerCase().includes(q));
+ document.getElementById("toolsGrid").innerHTML=a.map(x=>`<article class="card"><div class="icon">${x[2]}</div><h3>${x[0]}</h3><p><b>${x[1]}</b> — ${x[4]}</p><div class="tags">${x[3].join(" • ")}</div><p><a class="try" target="_blank" rel="noopener noreferrer" href="${x[5]}">Visit official site ↗</a></p></article>`).join("")||'<div class="card"><h3>No results</h3><p>Try another search.</p></div>';
+}
+render();
+</script>
+</body>
+</html>
